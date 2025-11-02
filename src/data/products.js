@@ -5,7 +5,7 @@ export const products = [
     brand: 'Apple',
     price: 29990000,
     oldPrice: 34990000,
-    image: '📱',
+    image: '/image/iPhone 15 Pro Max 256GB.jpg',
     rating: 5,
     reviews: 234,
     badge: 'Mới ra mắt',

@@ -1,46 +1,56 @@
 # Hướng Dẫn Deploy Website Lên GitHub Pages
 
-## 🔗 Link Website
+## 🔗 Link Website - CÔNG KHAI
 
-Sau khi deploy thành công, website của bạn sẽ có link:
+✅ **Link website của bạn (ai cũng có thể truy cập):**
 
 **https://chucuncon0107-glitch.github.io/web_banhang/**
 
+⚠️ **QUAN TRỌNG:** Để link hoạt động, bạn cần kích hoạt GitHub Pages trong Settings (chỉ cần làm 1 lần):
+
 ## 📋 Các Bước Deploy
+
+### ⚙️ KÍCH HOẠT GITHUB PAGES (Làm 1 lần duy nhất)
+
+1. **Vào GitHub Repository:**
+   - Link: https://github.com/chucuncon0107-glitch/web_banhang
+   - Click vào tab **Settings** (ở menu trên cùng)
+
+2. **Vào mục Pages (bên menu trái):**
+
+3. **Cấu hình:**
+   - **Source:** Chọn "Deploy from a branch"
+   - **Branch:** Chọn `gh-pages` 
+   - **Folder:** Chọn `/ (root)`
+   - Click **Save**
+
+4. **Đợi 1-2 phút**, sau đó truy cập link: https://chucuncon0107-glitch.github.io/web_banhang/
 
 ### Cách 1: Deploy Tự Động (Khuyên Dùng)
 
-1. **Bật GitHub Pages trong Repository:**
-   - Vào repository: https://github.com/chucuncon0107-glitch/web_banhang
-   - Vào Settings → Pages
-   - Source: chọn "GitHub Actions"
-   - Lưu lại
+Sau khi đã kích hoạt GitHub Pages ở trên, mỗi lần push code sẽ tự động deploy:
 
-2. **Push code lên GitHub:**
+1. **Push code lên GitHub:**
    ```bash
    git add .
    git commit -m "Setup GitHub Pages deployment"
    git push origin master
    ```
 
-3. **Chờ GitHub Actions tự động deploy:**
-   - Vào tab "Actions" trong repository
-   - Xem quá trình build và deploy
-   - Khi thành công, website sẽ có sẵn tại link trên
+3. **GitHub Actions tự động deploy:**
+   - Vào tab "Actions" trong repository để xem quá trình build
+   - Website sẽ tự động cập nhật sau mỗi lần push
 
-### Cách 2: Deploy Thủ Công
+### Cách 2: Deploy Thủ Công (Đã chạy xong! ✅)
 
-1. **Build và deploy:**
-   ```bash
-   npm run deploy
-   ```
+✅ **Website đã được deploy thành công!**
 
-2. **Commit và push:**
-   ```bash
-   git add .
-   git commit -m "Deploy to GitHub Pages"
-   git push origin master
-   ```
+Để deploy lại sau khi có thay đổi:
+```bash
+npm run deploy
+```
+
+Script này sẽ tự động build và push lên branch `gh-pages`
 
 ## ⚙️ Cấu Hình Đã Thực Hiện
 

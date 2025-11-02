@@ -1,0 +1,33 @@
+===========================================
+    LINK TRANG WEB CỦA BẠN - CÔNG KHAI
+===========================================
+
+🌐 LINK TRANG WEB:
+https://chucuncon0107-glitch.github.io/web_banhang/
+
+✅ Website đã được deploy thành công!
+
+📋 HƯỚNG DẪN KÍCH HOẠT (Nếu chưa hoạt động):
+
+1. Vào GitHub Repository:
+   https://github.com/chucuncon0107-glitch/web_banhang
+
+2. Vào Settings → Pages (ở menu bên trái)
+
+3. Trong phần "Source":
+   - Chọn: "Deploy from a branch"
+   - Branch: chọn "gh-pages"
+   - Folder: chọn "/ (root)"
+   - Nhấn "Save"
+
+4. Đợi 1-2 phút để GitHub Pages kích hoạt
+
+5. Truy cập link: https://chucuncon0107-glitch.github.io/web_banhang/
+
+📝 LƯU Ý:
+- Link này CÔNG KHAI, ai cũng có thể truy cập được
+- Khi bạn cập nhật code, chạy: npm run deploy
+- Website sẽ tự động cập nhật sau mỗi lần deploy
+
+===========================================
+

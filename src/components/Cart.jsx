@@ -8,6 +8,11 @@ const Cart = ({ isOpen, onClose }) => {
 
   if (!isOpen) return null;
 
+  const handlePlaceOrder = () => {
+    placeOrder();
+    onClose();
+  };
+
   return (
     <>
       {/* Overlay */}
@@ -92,10 +97,13 @@ const Cart = ({ isOpen, onClose }) => {
               <span>Tổng cộng:</span>
               <span className="text-primary-600">{formatPrice(getCartTotal())}</span>
             </div>
-            <button className="w-full btn-primary py-3">
-              Thanh Toán
+            <button
+              onClick={handlePlaceOrder}
+              className="w-full btn-primary py-3 text-lg font-semibold"
+            >
+              Đặt hàng
             </button>
-            <button 
+            <button
               onClick={clearCart}
               className="w-full btn-secondary py-2 text-sm"
             >

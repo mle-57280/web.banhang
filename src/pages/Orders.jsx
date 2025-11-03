@@ -200,38 +200,6 @@ const Orders = () => {
                       </div>
                     </div>
 
-                    {/* Actions */}
-                    <div className="flex flex-wrap gap-3 pt-4 border-t">
-                      <button className="btn-primary py-2 px-4 text-sm flex items-center">
-                        <Eye className="h-4 w-4 mr-2" />
-                        Chi tiết
-                      </button>
-                      {order.status === 'pending' && (
-                        <>
-                          <button className="btn-secondary py-2 px-4 text-sm">
-                            Điều chỉnh
-                          </button>
-                          <button className="bg-red-100 hover:bg-red-200 text-red-600 py-2 px-4 rounded-lg text-sm font-semibold transition-colors">
-                            Hủy đơn
-                          </button>
-                        </>
-                      )}
-                      {order.status === 'completed' && (
-                        <button className="bg-green-100 hover:bg-green-200 text-green-600 py-2 px-4 rounded-lg text-sm font-semibold transition-colors">
-                          Mua lại
-                        </button>
-                      )}
-                      <button className="btn-secondary py-2 px-4 text-sm">
-                        Liên hệ hỗ trợ
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              );
-            })
-          )}
-        </div>
-
         {/* Info Box */}
         <div className="bg-primary-50 border border-primary-200 rounded-lg p-6 mt-8">
           <h3 className="font-semibold text-primary-900 mb-2">Quyền lợi của bạn</h3>
